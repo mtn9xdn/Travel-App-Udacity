@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travel app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            Travel app
+        </div>
+    </header>
+
+    <main>
+        <div id="contact">
+            <div class="contact-body">
+                <form class="form-input" onsubmit="return Client.handleSubmit(event)">
+                    <div class="input-row">
+                        <input type="text" class="city-name" placeholder="City Name">
+                        <p class="error message-cityname">Error Message</p>
+                    </div>
+                    <div class="input-row">
+                        <input type="date" class="dateInput">
+                        <p class="error message-date">Error Message</p>
+                    </div>
+                    <div class="button-send">
+                        <button class="btn" type="submit">Send</button>
+                    </div>
+                </form>
+                <div class="result">
+                    <div id="image-city"></div>
+                    <div class="infor">
+                        <p id="city_name"></p><br>
+                        <p id="country_code"></p><br>
+                        <p id="temp"></p><br>
+                        <p id="pop"></p><br>
+                        <p id="rh"></p><br>
+                        <p id="description"></p><br>
+                        <div class="icon-weather">
+                            <p id="icon"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr width="40%" />
+    <footer>
+        <div class="contact-footer">
+            <i class="fa-solid fa-map-location-dot"></i>Danang, VN<br>
+            <i class="fa-solid fa-phone"></i>Phone: +12 345678<br>
+            <i class="fa-solid fa-envelope"></i>Email: mail@gmail.com<br>
+        </div>
+        <div class="contact-social">
+            <h3>Find me on social network</h3>
+            <div class="social-network">
+                <i class="fa-brands fa-facebook"></i>
+                <div class="icon-messenger">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </div>
+                <i class="fa-brands fa-twitter"></i>
+                <div class="icon-insta">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+
+</html>

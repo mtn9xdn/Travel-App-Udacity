@@ -1,0 +1,13 @@
+$logoColor: #2F80ED;
+
+header {
+    padding: 10px 40px;
+    text-align: center;
+
+    .logo {
+        font-weight: 500;
+        font-family: 'Tangerine', cursive;
+        color: $logoColor;
+        font-size: 90px;
+    }
+}
