@@ -1,6 +1,10 @@
 body {
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 1024px) and (min-width: 431px) {
+        gap: 2vh;
+    }
 }
 
 main {
@@ -13,4 +17,10 @@ main {
 
 i {
     padding: 10px 10px;
+}
+
+hr {
+    @media screen and (max-width: 1024px) and (min-width: 431px) {
+        width: 60%;
+    }
 }
