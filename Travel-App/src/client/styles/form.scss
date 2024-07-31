@@ -18,6 +18,16 @@ $bluecolor: #0c63f0;
             height: 29vh;
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
+            @media screen and (max-width: 1024px) and (min-width: 431px) {
+                min-width: 65vw;
+                height: 20vh;
+            }
+
+            @media screen and (max-width: 430px) {
+                min-width: 68vw;
+                height: 13vh;
+            }
+
             input {
                 padding: 12px 20px;
                 width: 100%;
@@ -54,6 +64,10 @@ $bluecolor: #0c63f0;
                     border-style: none;
                     color: white;
                 }
+
+                .btn:hover {
+                    background-image: linear-gradient(to right, #00b09b, #96c93d);
+                }
             }
         }
 
@@ -67,11 +81,29 @@ $bluecolor: #0c63f0;
             max-width: 50vw;
             color: #2F80ED;
 
+            @media screen and (max-width: 1024px) and (min-width: 431px) {
+                max-width: 65vw;
+            }
+
+            @media screen and (max-width: 430px) {
+                max-width: 65vw;
+            }
+
             .image-city {
                 width: 28vw;
                 height: 35vh;
                 text-align: center;
                 box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+                @media screen and (max-width: 1024px) and (min-width: 431px) {
+                    width: 42vw;
+                    height: 28vh;
+                }
+
+                @media screen and (max-width: 430px) {
+                    width: 42vw;
+                    height: 20vh;
+                }
             }
 
             .infor {
