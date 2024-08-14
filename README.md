@@ -1,2 +1,7 @@
 # Travel-App-Udacity
-Travel App NamMT
+Travel App 
+Author: NamMT
+
+ - npm install
+ - npm run start
+ - npm run build-dev
